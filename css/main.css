@@ -96,8 +96,10 @@ body {
   height: 581px;
   background: var(--primary-bg-color);
   border-radius: 4px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  transition: box-shadow var(--transition-duration-timing-function), transform var(--transition-duration-timing-function);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: box-shadow var(--transition-duration-timing-function),
+    transform var(--transition-duration-timing-function);
   padding: 40px;
 }
 
@@ -254,7 +256,7 @@ body {
 
 .modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--accent-color);
-  background-image: url(./images/done.svg);
+  background-image: url(../images/done.svg);
   background-repeat: no-repeat;
   background-position: 1px 2px;
   background-size: 12px;
@@ -288,7 +290,8 @@ body {
 
 .modal-form-submit:hover,
 .modal-form-submit:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   background-color: #188ce8;
   color: var(--primary-bg-color);
 }
@@ -410,7 +413,11 @@ body {
   max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Img.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/Img.jpg");
   background-size: cover;
   background-color: #c4c4c4;
 }
@@ -452,7 +459,8 @@ body {
 }
 
 .hero-button:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
   background-color: #188ce8;
   color: var(--primary-bg-color);
 }
@@ -560,7 +568,8 @@ body {
 
 .team-item {
   background-color: var(--primary-bg-color);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -731,7 +740,8 @@ body {
 .button:focus {
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 button.current-1 {
@@ -763,7 +773,8 @@ button.current-1 {
 }
 
 .work-item:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-text {
@@ -981,4 +992,4 @@ button.current-1 {
 .footer-form-input::placeholder {
   font-size: 16px;
   color: rgba(117, 117, 117, 0.5);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
