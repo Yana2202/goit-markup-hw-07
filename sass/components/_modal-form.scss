@@ -25,6 +25,10 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  .modal-form-input:focus + & {
+    fill: #2196f3;
+  }
 }
 
 .modal-form-input {
@@ -36,10 +40,11 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form-input:focus {
-  outline: none;
-  border-color: var(--accent-color);
+
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form-input-desc {
@@ -64,9 +69,7 @@
 .modal-form-field {
   margin-bottom: 10px;
 }
-.modal-form-input:focus + .modal-form-icon {
-  fill: #2196f3;
-}
+
 .modal-form-message {
   resize: none;
   width: 100%;
@@ -77,15 +80,17 @@
   transition-property: border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    font-size: 12px;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
 }
-.modal-form-message::placeholder {
-  font-size: 12px;
-  color: rgba(117, 117, 117, 0.5);
-}
-.modal-form-message:focus {
-  outline: none;
-  border-color: var(--accent-color);
-}
+
 .modal-form-check-desc {
   display: flex;
   align-items: center;
@@ -112,17 +117,19 @@
   cursor: pointer;
   margin-right: 8px;
   margin-left: 12px;
+
+  .modal-form-check:checked + & {
+    background-color: var(--accent-color);
+    background-image: url(../images/done.svg);
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+    background-size: 12px;
+  }
+  .modal-form-check:focus + & {
+    border: 1px solid var(--accent-color);
+  }
 }
-.modal-form-check:checked + .modal-form-check-desc::before {
-  background-color: var(--accent-color);
-  background-image: url(../images/done.svg);
-  background-repeat: no-repeat;
-  background-position: 1px 2px;
-  background-size: 12px;
-}
-.modal-form-check:focus + .modal-form-check-desc::before {
-  border: 1px solid var(--accent-color);
-}
+
 .modal-form-submit {
   min-width: 200px;
   height: 57px;
@@ -143,11 +150,12 @@
   transition-property: background-color, color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-form-submit:hover,
-.modal-form-submit:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  background-color: #188ce8;
-  color: var(--primary-bg-color);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    background-color: #188ce8;
+    color: var(--primary-bg-color);
+  }
 }

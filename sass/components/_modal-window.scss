@@ -30,12 +30,13 @@
   transition-property: fill, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  border-color: var(--accent-color);
-}
-.modal-close-btn:hover .modal-close-btn-icon,
-.modal-close-btn:focus .modal-close-btn-icon {
-  fill: var(--accent-color);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+  &:hover .modal-close-btn-icon,
+  &:focus .modal-close-btn-icon {
+    fill: var(--accent-color);
+  }
 }

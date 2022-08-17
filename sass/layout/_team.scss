@@ -71,20 +71,20 @@
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--primary-bg-color);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+  &:hover .social-list-icon,
+  &:focus .social-list-icon {
+    fill: var(--primary-bg-color);
+  }
 }
 
 .social-list-icon {
   fill: #afb1b8;
-}
-
-.social .social-list-icon {
-  fill: var(--primary-bg-color);
+  .social & {
+    fill: var(--primary-bg-color);
+  }
 }
