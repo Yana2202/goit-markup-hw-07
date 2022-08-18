@@ -91,10 +91,7 @@
 
 .footer-form-title {
   font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font();
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
@@ -102,6 +99,7 @@
   padding-top: 12px;
   margin-left: 95px;
 }
+
 .footer-form-input {
   width: 358px;
   height: 50px;
@@ -134,9 +132,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(16px, 700, 30px);
   letter-spacing: 0.06em;
   background-color: var(--accent-color);
   color: var(--primary-bg-color);

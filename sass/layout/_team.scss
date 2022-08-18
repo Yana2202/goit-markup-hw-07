@@ -12,9 +12,7 @@
 .team-title {
   margin-bottom: 50px;
   font-family: var(--primary-font);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(36px, 700, 42px);
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -44,9 +42,7 @@
 }
 
 .team-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.19;
+  @include font(16px, 400, 19px);
   /* identical to box height */
 
   text-align: center;
@@ -55,6 +51,7 @@
   color: var(--primary-text-color);
   margin-bottom: 16px;
 }
+
 .social-list {
   display: flex;
   justify-content: center;

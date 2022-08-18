@@ -14,9 +14,7 @@
   border-radius: 4px;
   border: var(--accent-color);
   font-family: "Roboto";
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
+  @include font(16px, 700, 26px);
   /* identical to box height, or 162% */
   letter-spacing: 0.03em;
 
@@ -47,14 +45,13 @@ button.current-1 {
 }
 .work-name {
   font-family: "Roboto";
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
+  @include font(18px, 700, 36px);
   /* identical to box height, or 200% */
   letter-spacing: 0.06em;
   color: var(--tertiary-font);
   border-bottom: 4px;
 }
+
 .work-item-content-wrapper {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
@@ -72,13 +69,12 @@ button.current-1 {
 
 .work-text {
   font-family: "Roboto";
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
+  @include font(16px, 700, 30px);
   /* identical to box height, or 188% */
 
   letter-spacing: 0.03em;
 }
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
